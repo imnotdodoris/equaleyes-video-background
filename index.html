@@ -4,18 +4,16 @@
   <meta charset="UTF-8" />
   <title>EqualEyes 视频背景</title>
   <style>
+    /* 不要设置 height 或 overflow 限制 */
     html, body {
       margin: 0;
       padding: 0;
     }
+    /* 正常流下显示视频，不固定屏幕 */
     video {
-      top: 0;
-      left: 0;
-      position: fixed
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
+      display: block;
+      width: 100%;
+      height: auto;
     }
   </style>
 </head>
